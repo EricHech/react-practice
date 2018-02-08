@@ -1,28 +1,232 @@
-.App {
+/*Nav Bar Styling*/
+
+.nav__bar {
+  box-sizing: border-box;
+  max-width: 1100;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: #283E4A;
+  position: fixed;
+}
+
+.menu__buttons {
+  display: flex;
+  width: 60%;
+  color: black;
   text-align: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  justify-content: space-around;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.menu__buttons a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.menu__buttons a.active {
+  background-color: #2196F3;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.search__bar {
+  width: 30%;
+  align-self: center;
+
 }
 
-.App-intro {
-  font-size: large;
+.searchbar__field {
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+  border: none;
+  margin-right: 16px;
+  font-size: 17px;
+  margin-left: 10px;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.searchbarImg__wrapper{
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+
+}
+
+.searchbar__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10%;
+  align-self: center;
+}
+
+/*Main Content Styling*/
+
+.body__container {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  background: #E1E9EE;
+  padding-top: 50px;
+}
+
+.main__content {
+  border: solid 1px #CAD0D2;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background: #FEFEFE;
+  margin-top: 10px;
+}
+
+.content__heading {
+  border: solid 1px 1px 0px 1px #CAD0D2;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.content__cards {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.content__cards img {
+  border-radius: 50%;
+  width: 100px;
+  align-self: center;
+}
+
+.each__card {
+  width: 33.3%;
+  border: solid 1px #CAD0D2;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.contentCard__username {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.each__card img {
+  display: flex;
+}
+
+/*Left Bar Styling*/
+
+.left__bar {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.connections__card {
+  display: flex;
+  width: 15%;
+  height: 250px;
+  flex-direction: column;
+  border: 1px solid #CAD0D2;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+  position: fixed;
+  background: #FEFEFE;
+}
+
+.number__connections {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  color: #2196F3;
+}
+
+.your__connections {
+  margin: 10px;
+  height: 25px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 0px;
+  }
+
+.connections__link {
+  text-align: center;
+  color: #e7e9ec;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2196F3;
+}
+
+.find__connections {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-top: 1px solid rgb(159, 164, 167);
+  color: #2196F3;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.connections__photos {
+  /*ran out of time*/
+}
+
+/*Right Bar Styling*/
+
+.right__bar {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.right__footer {
+  border-top: solid 1px rgb(83, 116, 148);
+  margin-top: 10px;
+  padding-top: 15px;
+  position: fixed;
+  width: 20%;
+  height: 250px;
+  color: rgb(83, 116, 148);
+}
+
+.footer__linklist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__linklist li {
+  padding-top: 15px;
+  padding-right: 5px;
+}
+
+.footer__copywrite {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 12px;
 }
